@@ -31,6 +31,7 @@
                 .static:hover {
                     background-color: lightgreen;
                     width: 400px;
+                    border: 2px dashed brown;
                 }
 
             </style>
@@ -60,6 +61,85 @@
 
             <h3 class="fixed">Fixed Positioning</h3>
         </div>
-    </div>
+
+        <div>
+            <!--Relative position-->
+
+            <style>
+                .relative {
+                    position: relative;
+                    top: 20px;
+                    left: 20px;
+                    width: 500px;
+                    height: 200px;
+                    background-color: blanchedalmond;
+                    padding: 20px;
+                    margin: 10px;
+                    border: 2px solid red;
+
+                }
+                .relative:hover{
+                    background-color: aquamarine;
+                }
+            </style>
+
+            <h3 class="relative">Relative Position</h3>
+        </div>
+
+        <div>
+            <!-- Absolute positioning -->
+
+            <style>
+                .absolute{
+                    position: absolute;
+                    top: 350px;
+                    width: 350px;
+                    height: 100px;
+                    background-color: rgb(194, 235, 194);
+                    padding: 20px;
+                    margin-left: 100px;
+                    border: 2px solid green;
+                }
+                .absolute:hover{
+                    background-color: aqua;
+                }
+            </style>
+            <h3 class="absolute">Absolute Position</h3>
+        </div>
+
+       
+            <!-- Sticky Property -->
+
+            <style>
+                .sticky {
+                    position: sticky;
+                    top: 0;
+                    background-color: rgb(194, 235, 194);
+                    border: 2px solid blue;
+                }
+                
+            </style>
+            <div class="sticky">
+                <h3>sticky Position</h3>
+            </div>
+
+            <!-- Display None -->
+
+            <style>
+                .none{
+                    display: none;
+                    background-color: aliceblue;
+                    padding: 20px;
+                    margin: 10px;
+                    border: 2px solid black;
+                }
+                .none:hover{
+                    width: 400px;
+                    background-color: blueviolet;
+                    border: 2px dashed burlywood;
+                }
+            </style>
+            <h3 class="none">None Positioning</h3>
+    </div> 
 </body>
 </html>
