@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position-Property</title>
+</head>
+<body>
+    <div style="height: 3000px;">
+        <h1>CSS position Property </h1>
+        <p> The position property specifies the type of positioning method used for an element.</p>
+        <ul>
+            <li><strong>Static</strong>: Default value, elements are positioned according to the normal flow of the document page.</li>
+            <li><strong>Relative</strong>: Elements are positioned relatives to their normal position.</li>
+            <li><strong>Absolute</strong>: Elements are positioned relatives to the nearest postioned ancestor (insted of positioned relatives to the viewport like fixed).</li>
+            <li><strong>Fixed</strong>: Elements are positioned relatives to the browser window.</li>
+            <li><strong>Sticy</strong>: Elements are positioned based on the user's scroll position.</li>
+        </ul>
+
+        <div>
+            <!--Static Position -->
+
+            <style>
+                .static {
+                    position: static;
+                    background-color: lightblue;
+                    padding: 20px;
+                    margin: 10px;
+                    border: 2px solid blue;
+                }
+                .static:hover {
+                    background-color: lightgreen;
+                    width: 400px;
+                }
+
+            </style>
+
+            <h3 class="static">Static Positioning</h3>
+        </div>
+
+        <div>
+            <!-- Fixed Postion -->
+
+            <style>
+                .fixed {
+                    position: fixed;
+                    top: 20px;
+                    left: 20px;
+                    background-color: lightgreen;
+                    padding: 20px;
+                    margin: 10px;
+                    border: 2px solid green;
+                }
+
+                .fixed:hover{
+                    transform: scale(1.1,1.1);
+                    background-color: bisque;
+                }
+            </style>
+
+            <h3 class="fixed">Fixed Positioning</h3>
+        </div>
+    </div>
+</body>
+</html>
