@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-2</title>
+</head>
+<body>
+
+  <h2> Transformation </h2>
+
+  <!--
+      - CSS3 sllowa us to transform the elements in 2D ans 3D space.
+      - It allows us to change the position, size and shape of an elements.
+      - It is used to create animations and effects.
+      - It is used to create 2D and 3D effects.
+  -->
+
+  <!--
+      - Which aloows the user to move rotate scale and skew any HTML elements.
+
+      -2D Transform
+          -Scale
+          -Translate
+          -Rotate
+          -Skew
+          -Matrix
+        
+      -3D Transform
+          -RotateX
+          -RotateY
+          -RotateZ
+  -->
+    <h4> 2D Transform </h4>
+    <!-- Scale -->
+     <style>
+        .scale {
+            background-color: darkorange;
+            width: 200px;
+            height: 100px;
+            margin: 10px;
+        }
+
+        .scale:hover {
+            background-color: aliceblue;
+            transform: scale(1.1,1.1);
+        }
+     </style>
+
+     <div class="scale">
+        On hover the box it scales its size.
+     </div>
+
+     <hr>
+
+    <!-- Translate -->
+
+     <style>
+        .translate {
+            background-color: aqua;
+            width: 200px;
+            height: 100px;
+        }
+
+        .translate:hover {
+            transform: translate(20px, 20px);
+            background-color: antiquewhite;
+        }
+     </style>
+
+     <div class="translate">
+            on hover the box, it uses translate to move the box.
+     </div>
+
+    <hr>
+
+    <!-- Rotate -->
+     <style>
+        .rotate {
+          background-color: greenyellow;
+          width: 200px;
+          height: 100px;
+        }
+
+        .rotate:hover {
+          transform: rotate(270deg);
+        }
+     </style>
+
+      <div class="rotate">
+        on hover the box, it uses translate to move the box.
+      </div>
+
+     <hr>
+
+    <!-- Skew -->
+       <style>
+        .skew {
+          background-color: rgb(47, 123, 255);
+          width: 200px;
+          height: 100px;
+          margin: 50px;
+        }
+
+        .skew:hover {
+          transform: skew(10deg,20deg);
+        }
+       </style>
+
+       <div class="skew"> 
+        On hover the box,it rotates at its position.
+       </div>
+    
+    <!-- Matrix
+            - It is used for all the 2D transform methods to be used all at once.
+            - Syntax
+                matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY())
+    -->
+        
+       <style>
+        .matrix {
+          background-color: rgb(255, 47, 200);
+          width: 200px;
+          height: 100px;
+          margin: 50px;
+        }
+
+        .matrix:hover {
+          transform: matrix(1.1,1.1,1.2,1.1,10,10);
+        }
+       </style>
+
+       <div class="matrix">
+        On hover the box, it combines all the 2D transform methods.
+       </div>
+
+      <h4> 3D Transform </h4>
+
+       <!-- RotateX-->
+           <style>
+             .rotateX {
+                 background-color: rgb(34,255,0);
+                 width: 200px;
+                 height: 100px;
+                 margin: 10px;
+             }
+     
+             .rotateX:hover {
+                 transform: rotateX(90deg);
+             }
+           </style>
+     
+           <div class="rotateX">
+             On hover the box it will be rotate on X-axis
+           </div>
+     
+         <hr>
+     
+         <!-- RotateY-->
+           <style>
+             .rotateY {
+                 background-color: rgb(136,160,240);
+                 width: 200px;
+                 height: 100px;
+                 margin: 10px;
+             }
+     
+             .rotateY:hover {
+                 transform: rotateY(150deg);
+             }
+           </style>
+     
+           <div class="rotateY">
+             On hover the box it will be rotate on Y-axis
+           </div>
+     
+         <hr>
+     
+         <!-- RotateZ-->
+     
+         <style>
+             .rotateZ {
+                 background-color: rgb(240,136,197);
+                 width: 200px;
+                 height: 100px;
+                 margin: 10px;
+             }
+     
+             .rotateZ:hover {
+                 transform: rotateZ(180deg);
+             }
+           </style>
+     
+           <div class="rotateZ">
+             On hover the box it will be rotate on Z-axis
+           </div>
+     
+           <hr>
+     
+
+</body>
+</html>
