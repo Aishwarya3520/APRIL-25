@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+</head>
+<body>
+     
+    <h2> Transitions </h2>
+    <!-- Transitions -->
+     <style>
+        .transitions {
+            background-color: darkseagreen;
+            width: 200px;
+            height: 100px;
+            margin: 20px;
+        }
+
+        .transitions:hover {
+            width: 40px;
+            background-color: darkorange;
+        }
+     </style>
+
+     <div class="transitions">
+        On hover the box will start the transition effect.
+     </div>
+
+     <hr>
+
+    <!-- Transition-Delay -->
+      <style>
+        .transitionDelay {
+            background-color: darkseagreen;
+            width: 200px;
+            height: 100px;
+            margin: 20px;
+            transition-delay: 0.5s;
+        }
+
+        .transitionDelay:hover {
+            width: 40px;
+            background-color: darkorange;
+        }
+      </style>
+
+      <div class="transitions">
+        On hover the box will start the transition effect.
+      </div>
+
+    <!-- Transition + transform -->
+    <style>
+        .tt {
+            background-color: rgba(9, 162, 9);
+            width: 200px;
+            height: 100px;
+            margin: 20px;
+            transition-delay: 0.5s;
+            transition: width 2s, background-color 10s, transform 10s;
+        }
+
+        .tt:hover {
+            background-color: rgb(144,0,255);
+            transform: rotate(360deg);
+            width: 400px;
+        }
+    </style>
+
+    <div class="tt">
+        On hover the box will start the transition effect.
+    </div>
+
+</body>
+</html>
